@@ -1,0 +1,349 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent scroll on narrow devices */
+}
+
+body {
+    background: #eee;
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+
+.navbar-inverse {
+    background-color: rgb(11, 42, 91);
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: rgb(9, 30, 64);
+}
+
+.user-info div {
+    margin-left: 60px;
+}
+
+.user-info {
+    padding: 20px 15px;
+    border-bottom: 1px solid rgb(11, 42, 91);
+    color: white;
+    background: rgb(28, 70, 135);
+}
+
+.user-info div b {
+    font-size: 20px;
+}
+
+.user-info div span {
+    color: #ccc;
+    line-height: 1.38571;
+}
+
+.user-data {
+    font-size: 18px;
+    padding: 15px 5px;
+    text-align: center;
+    color: white;
+    background: rgb(28, 70, 135);
+}
+
+.user-info img {
+    float: left;
+    border-radius: 6px;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+a.list-group-item,
+button.list-group-item {
+    background: #303030;
+    color: white;
+}
+
+.list-group-item {
+    border: none;
+}
+
+a.list-group-item:focus,
+a.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover {
+    color: white;
+    background-color: #424242;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+    background-color: #777777;
+}
+
+.leftsidebar {
+    max-height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    top: 51px;
+    left: 0px;
+    background: rgb(48, 48, 48)
+}
+
+.rightcontent {
+    position: static;
+    margin-top: 51px;
+}
+
+.list-group img {
+    border-radius: 6px;
+}
+
+.list-group a span {
+    font-size: 16px;
+}
+
+.list-group a .fa-circle {
+    color: rgb(21, 213, 125);
+}
+
+.list-group {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.leftsidebar.col-sm-3.col-lg-2 {
+    padding: 0px;
+}
+
+.rightcontent-main {
+    background: white;
+    padding-top: 15px;
+}
+
+.rightcontent-main-form {
+    padding: 20px;
+}
+
+.rightcontent-main-bar {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding: 12px;
+    background: #1C4687;
+}
+
+.rightcontent-main-form input,
+.rightcontent-main-form textarea {
+    width: 100%;
+}
+
+.rightcontent-main-form p {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.rc-submit {
+    margin-top: 30px;
+}
+
+.rc-submit button:nth-child(2) {
+    float: right;
+    background-color: #1C4687;
+    color: white;
+}
+
+.tag {
+    border-radius: 20px;
+    font-size: 14px;
+    padding: .3em .4em .4em;
+    margin: 0 .1em;
+}
+
+.tag a {
+    color: #bbb;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.tag a:hover {
+    opacity: 1.0
+}
+
+.tag .remove {
+    vertical-align: bottom;
+    top: 0;
+}
+
+.tag a {
+    margin: 0 0 0 .3em;
+}
+
+.tag a .glyphicon-white {
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.closebuttons {
+    margin: 20px 0px;
+}
+
+.rightcontent-main-form ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.rightcontent-main-form ul li {
+    margin-top: 20px;
+    height: 80px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.rightcontent-main-form ul li div:first-child {
+    float: left;
+}
+
+.rightcontent-main-form ul li div:nth-child(2) {
+    float: right;
+}
+
+.rc-m-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rc-m-time {
+    color: #999;
+}
+
+.rc-m-info {
+    color: rgb(28, 70, 135);
+}
+
+::-webkit-scrollbar {
+    min-width: 12px;
+    width: 12px;
+    max-width: 12px;
+    min-height: 12px;
+    height: 12px;
+    max-height: 12px;
+    background: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border: none;
+    border-radius: 100px;
+    border: solid 3px #e5e5e5;
+    box-shadow: inset 0px 0px 3px #999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b0b0b0;
+    box-shadow: inset 0px 0px 3px #888;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #aaa;
+    box-shadow: inset 0px 0px 3px #7f7f7f;
+}
+
+::-webkit-scrollbar-button {
+    display: block;
+    height: 0px;
+}
+
+.loginpage {
+    padding-top: 60px;
+}
+
+.loginsubmit {
+    width: 90%;
+}
+
+.loginsubmitdiv {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.left-inner-addon {
+    position: relative;
+}
+
+.left-inner-addon input {
+    padding-left: 30px;
+}
+
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+
+.right-inner-addon input {
+    padding-right: 30px;
+}
+
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+.loginpage form .checkbox {
+    margin-left: 20px;
+}
+
+.loginpage form {
+    width: 260px;
+    margin: 0px auto;
+}
+
+.logo {
+   text-align: center;
+}
+.loginTitle {
+    color: rgb(28, 70, 135);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.loginInfo {
+    font-weight: 600;
+}
+
+.loginsubmit {
+   background:#1C4687; 
+}
+
+.loginpage {
+  
+   
+}
